@@ -1,0 +1,108 @@
+:root{
+    background-color: black;
+    background: var(--background-color);
+    color: var(--BaseColor);
+    /* --imgBackgroundColor: black; */
+    /* --imgBorder: .25rem solid white; */
+    /* --imgRadius:100px; */
+    --BaseColor: white;
+    --cardTextColor: green;
+    --background-color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(29,29,122,1) 50%, rgba(23,10,240,1) 100%);
+
+
+}
+.projectsBox{
+    border: 2px solid none;
+    background-color: var(--background-color);
+
+    
+}
+.footer{
+    background-color: var(--background-color);
+}
+.header-container {
+    background-color: var(--background-color);
+    justify-content: center;
+    text-align: center;
+    /* background-color: aqua;s */
+    max-width: 100%;
+
+}
+.active{
+    color:green
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    list-style-type: none;
+    cursor: pointer;
+    /* margin-block-start: 0em;
+    margin-block-end: 0em; */
+    /* margin: 0em; */
+    padding-inline-start: 0px;
+}
+
+
+.Header-Img {
+    max-width: 100%;
+    /* width: 600px */
+}
+/* .projectsBox h1{
+    text-align: center;
+} */
+.events{
+    justify-content:space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: var(--background-color);
+}
+.event-Img{
+    width: 100vw;
+    /* max-width: 300px; */
+}
+
+.cardColumn{
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--cardTextColor);
+}
+.Port-Img{
+    height: 100px;
+    max-width: 200px;
+
+}
+.about-Img Img{
+    max-width: 4rem;
+    border:.25rem solid white;
+    border-radius: 100px;
+    background-color:black;
+    justify-content: center;
+    text-align: center;
+}
+.about-Img{
+    display: flex;
+    justify-content: right;
+}
+
+.star{
+    width: 200px;
+}
+a{
+    text-decoration: none;
+}
+a:visited {
+  color: var(--cardTextColor);
+}
+h1 {
+    text-align: center;
+}
+
