@@ -1,6 +1,6 @@
 import React from 'react';
 import About from "../pages/about";
-import Merch from "../pages/contentMerch";
+import Merch from "../pages/Merch";
 import Contact from "../pages/contact";
 import Info from "../pages/info";
 import PageContent from '../PageContent';

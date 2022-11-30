@@ -13,7 +13,7 @@ function contentMerchPage() {
 
                 <section className="cardColumn">
                     <a href="" target= "blank">
-                        <img className="Port-Img " src={Placeholder} alt="placeholder" />
+                        <img className="Port-Img star" src={Placeholder} alt="placeholder" />
                         <h2 className="cardHeader">Item</h2>
                     </a>
                 </section>
@@ -28,7 +28,7 @@ function contentMerchPage() {
 
                 <section className="cardColumn">
                     <a href="" target= "_blank">
-                        <img className="Port-Img star" src={Placeholder} alt="placeholder" />
+                        <img className="Port-Img " src={Placeholder} alt="placeholder" />
                         <h2 className="cardHeader">Item</h2>
                     </a>
                 </section>
