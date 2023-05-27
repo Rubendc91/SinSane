@@ -10,10 +10,12 @@ function ContactPage() {
     });
     const [errorMessage, setErrorMessage] = useState("");
     const { name, email, message } = formState;
+    
     const handleSubmit = (event) => {
         event.preventDefault();
         if (!errorMessage) {
-            alert("Submit Form")
+         
+            // alert("Can not be Blank")
             console.log("submit form", formState)
         }
     };
@@ -27,7 +29,6 @@ function ContactPage() {
         console.log(event.target.name);
         if (event.target.name === "email") {
             const isValid = validateEmail(event.target.value);
-            console.log(isValid);
             if (!isValid) {
                 setErrorMessage("Your email is invalid")
             } else {
@@ -39,10 +40,10 @@ function ContactPage() {
             } else {
                 setErrorMessage("")
             }
-            if (!errorMessage) {
-                setFormState({ ...formState, [event.target.name]: event.target.value });
-                console.log("Handle Form", formState);
-            }
+        }
+        if (!errorMessage) {
+            setFormState({ ...formState, [event.target.name]: event.target.value });
+            console.log("Handle Form", formState);
         }
     }
     const contactForm = {
@@ -75,7 +76,7 @@ function ContactPage() {
                         <p>{errorMessage}</p>
                     </section>
                 )}
-                <button type="submit">Submit</button>
+               <button type="submit"><a href= "mailto:Rubendc91@gmail.com?subject={email}&body=This is only a test!">Submit</a> </button>
             </form>
         </section>
     );
