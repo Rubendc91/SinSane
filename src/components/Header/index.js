@@ -6,8 +6,8 @@ import '../style.css';
 function Header(props) {
     return (
         <header className="header-container">
-            <h1>SinSane</h1>
-            <img className="Header-Img" src={Banner} />
+            <h1>Sinsane</h1>
+            <img className="Header-Img" src={Banner} alt="sinsane" />
             {props.children}
         </header>);
 }

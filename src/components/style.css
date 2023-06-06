@@ -18,7 +18,7 @@
     
 }
 .footer{
-    color: var(--BaseColor);
+   color: var(--BaseColor);
 }
 .header-container {
     background-color: var(--background-color);
@@ -47,8 +47,8 @@
 
 
 .Header-Img {
-    max-width: 100%;
-    /* width: 600px */
+    max-width: 96%;
+    border:.5rem outset white;    
 }
 /* .projectsBox h1{
     text-align: center;
@@ -83,16 +83,31 @@
 
 }
 .about-Img Img{
-    max-width: 4rem;
+    max-width: 5rem;
+    border:.25rem solid white;
+    border-radius: 100px;
+    background-color:black;
+    justify-content: center;
+    text-align: center;    
+}
+.aboutSin-Img Img{
+    max-width: 10rem;
     border:.25rem solid white;
     border-radius: 100px;
     background-color:black;
     justify-content: center;
     text-align: center;
 }
-.about-Img{
+
+/* .aboutSin-Img{
     display: flex;
     justify-content: right;
+} */
+
+.about-Img{
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .star{
