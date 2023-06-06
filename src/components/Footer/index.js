@@ -2,7 +2,7 @@ import React from 'react';
 import '../style.css';
 
 function Footer() {
-    const icons = [
+    const iconsOmni = [
         {
             name: "fa-brands fa-instagram",
             links: "https://www.instagram.com/omnitheartist/?hl=en"
@@ -46,7 +46,7 @@ function Footer() {
         <footer style={FooterStyle} className="footer">
             <section style={FooterSection} >
                 <section style={{ paddingRight: "15px"}}>© {new Date().getFullYear()}</section>
-                {icons.map(icon => {
+                {iconsOmni.map(icon => {
                     return <a href={icon.links} key={icon.name} target="_blank" rel="noopener noreferrer" style={linkStyle}><i className={icon.name}></i></a>
                 })}
             </section>

@@ -6,8 +6,8 @@
     /* --imgBorder: .25rem solid white; */
     /* --imgRadius:100px; */
     --BaseColor: white;
-    --cardTextColor: green;
-    --background-color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(29,29,122,1) 50%, rgba(23,10,240,1) 100%);
+    --cardTextColor: white;
+    --background-color: linear-gradient(90deg, rgba(167,2,2,1) 7%, rgba(0,0,0,1) 49%,rgba(96,0,189,1)  100%);
 
 
 }

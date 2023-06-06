@@ -46,38 +46,76 @@ function ContactPage() {
             console.log("Handle Form", formState);
         }
     }
-    const contactForm = {
-        color: "red",
-     
-     }
-    const label = {
-        display: "inline-block",
-        width: "120px",
-        textAlign: "center",
-      }
+    const iconsOmni = [
+        {
+            name: "fa-brands fa-instagram fa-bounce",
+            links: "https://www.instagram.com/omnitheartist/?hl=en",
+            tag: "Instagram___"
+        },
+        {
+            name: "fa-brands fa-tiktok fa-bounce",
+            links: "https://www.tiktok.com/@omnitheartist",
+            tag: "TikTok___"
+        },
+        {
+        name: "fa-brands fa-facebook fa-bounce",
+        links: "https://www.facebook.com/Omnisplayground",
+        tag: "Facebook___"
+       },
+    ]
+
+    const iconsFatLip = [
+        {
+            name: "fa-brands fa-instagram fa-bounce",
+            links: "https://www.instagram.com/omnitheartist/?hl=en",
+            tag: "Instagram___"
+        },
+        {
+            name: "fa-brands fa-tiktok fa-bounce",
+            links: "https://www.tiktok.com/@omnitheartist",
+            tag: "TikTok___"
+        },
+        {
+        name: "fa-brands fa-facebook fa-bounce",
+        links: "https://www.facebook.com/Omnisplayground",
+        tag: "Facebook___"
+       },
+    ]
+
+    const linkStyle = {
+        border:".5rem outset white",
+        textDecoraton: "none",
+        color: "white",
+        cursor: "pointer",
+        fontSize: "2rem",
+        justifyContent: "center",
+        display: "flex",
+        padding:"1rem",
+        margin: "1rem"
+    }
+
     return (
-        <section style={{borderStyle: "solid",border: "red"}}>
-            <h1>Contact</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <section>
-                    <label style={label} htmlFor="name">Name: </label>
-            <input style={contactForm} type="text" name="name" defaultValue={name} onBlur={handleChange} />
+        <section>
+            {/* <h1>Contact</h1> */}
+                <section class="contactBorder" style={{border: ".5rem inset white", padding: ".2rem", margin: "4rem 0"}}>
+                    <h1>Omni</h1>
+                {iconsOmni.map(icon => {
+                    return <a href={icon.links} key={icon.name} target="_blank" rel="noopener noreferrer" style={linkStyle}>{icon.tag}<i className={icon.name}></i></a>
+                })}
+                            <a href= "mailto:omniofthearts.com?subject=Important!!!!!!&body=What would you like to say?" style={linkStyle}>Email____<i class="fa-solid fa-paper-plane fa-bounce" ></i></a> 
+
                 </section>
-                <section>
-                    <label style={label} htmlFor="message">message: </label>
-                    <input style={contactForm} type="text" name="message" defaultValue={message} onBlur={handleChange} />
+
+                <section class="contactBorder" style={{border: ".5rem inset white", padding: ".2rem", margin: "4rem 0"}}>
+                <h1>Fat Lip</h1>
+
+                {iconsFatLip.map(icon => {
+                    return <a href={icon.links} key={icon.name} target="_blank" rel="noopener noreferrer" style={linkStyle}>{icon.tag}<i className={icon.name}></i></a>
+                })}
+                            <a href= "mailto:omniofthearts.com?subject=Important!!!!!!&body=What would you like to say?" style={linkStyle}>Email____<i class="fa-solid fa-paper-plane fa-bounce" ></i></a> 
+
                 </section>
-                <section>
-                    <label style={label} htmlFor="email">Email address: </label>
-                    <input style={contactForm} type="text" name="email" defaultValue={email} onBlur={handleChange} />
-                </section>
-                {errorMessage && (
-                    <section>
-                        <p>{errorMessage}</p>
-                    </section>
-                )}
-               <button type="submit"><a href= "mailto:Rubendc91@gmail.com?subject={email}&body=This is only a test!">Submit</a> </button>
-            </form>
+
         </section>
     );
 }
