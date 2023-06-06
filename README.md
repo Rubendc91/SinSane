@@ -1,1 +1,1 @@
-# Omni
+# SinSane
