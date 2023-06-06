@@ -8,7 +8,7 @@
     --BaseColor: white;
     --cardTextColor: white;
     --background-color: linear-gradient(90deg, rgba(167,2,2,1) 7%, rgba(0,0,0,1) 49%,rgba(96,0,189,1)  100%);
-
+    --activeTab: linear-gradient(0deg, rgba(167,2,2,1) 7%, rgba(0,0,0,1) 49%,rgba(96,0,189,1)  100%)
 
 }
 .projectsBox{
@@ -18,7 +18,7 @@
     
 }
 .footer{
-    background-color: var(--background-color);
+    color: var(--BaseColor);
 }
 .header-container {
     background-color: var(--background-color);
@@ -29,7 +29,9 @@
 
 }
 .active{
-    color:green
+    color:var(--BaseColor);
+    background: var(--activeTab);
+    border-radius: .5rem;
 }
 .nav-container{
     display: grid;
