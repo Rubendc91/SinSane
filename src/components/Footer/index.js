@@ -41,6 +41,7 @@ function Footer() {
         textDecoraton: "none",
         cursor: "pointer",
         alignSelf: "center",
+        color: "white"
 
     }
 
