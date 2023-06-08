@@ -22,12 +22,22 @@
 }
 .header-container {
     background-color: var(--background-color);
+    align-items: center;
     justify-content: center;
     text-align: center;
     /* background-color: aqua;s */
     max-width: 100%;
 
 }
+
+.Header-Img {
+    max-width: 96%;
+    max-height: 20rem;
+    /* border:.5rem outset white;     */
+    /* border-radius: 15rem; */
+
+}
+
 .active{
     color:var(--BaseColor);
     background: var(--activeTab);
@@ -46,10 +56,6 @@
 }
 
 
-.Header-Img {
-    max-width: 96%;
-    border:.5rem outset white;    
-}
 /* .projectsBox h1{
     text-align: center;
 } */

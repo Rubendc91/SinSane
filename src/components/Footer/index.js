@@ -22,7 +22,7 @@ function Footer() {
     const iconsFatLip = [
             {
                 name: "fa-brands fa-instagram",
-                links: "https://www.instagram.com/omnitheartist/?hl=en"
+                links: "https://www.instagram.com/fat_ass_lips/?hl=en"
             },
             {
                 name: "fa-brands fa-tiktok",
@@ -80,7 +80,7 @@ function Footer() {
                 </section>
             </section>
             <section style={FooterStyle}>
-                <section>Sinsane © {new Date().getFullYear()}</section>
+                <section>SinSane © {new Date().getFullYear()}</section>
                 </section>
         </footer>
     )

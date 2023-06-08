@@ -9,8 +9,7 @@ function OmniSwitch() {
     Fatlip.style.display = 'none'
     let omni = document.getElementById("about-Omni");
     omni.style.display = 'block'
-    // document.getElementById
-    // document.getElementById('about-Omni')
+
 };
 
 function FatlipSwitch() {
@@ -18,8 +17,7 @@ function FatlipSwitch() {
     omni.style.display = 'none'
     let Fatlip = document.getElementById("about-Fatlip");
     Fatlip.style.display = 'block'
-    // document.getElementById
-    // document.getElementById('about-Omni')
+
 
 };
 
