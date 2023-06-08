@@ -77,7 +77,7 @@ function ContactPage() {
         },
         {
         name: "fa-brands fa-facebook fa-bounce",
-        links: "https://www.facebook.com/Omnisplayground",
+        links: "https://www.facebook.com/https://facebook.com/ThaPhatest",
         tag: "Facebook___"
        },
     ]
@@ -112,7 +112,7 @@ function ContactPage() {
                 {iconsFatLip.map(icon => {
                     return <a href={icon.links} key={icon.name} target="_blank" rel="noopener noreferrer" style={linkStyle}>{icon.tag}<i className={icon.name}></i></a>
                 })}
-                            <a href= "mailto:omniofthearts.com?subject=Important!!!!!!&body=What would you like to say?" style={linkStyle}>Email____<i class="fa-solid fa-paper-plane fa-bounce" ></i></a> 
+                            <a href= "legallysmith@gmail.com?subject=Important!!!!!!&body=What would you like to say?" style={linkStyle}>Email____<i class="fa-solid fa-paper-plane fa-bounce" ></i></a> 
 
                 </section>
 
