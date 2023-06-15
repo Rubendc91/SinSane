@@ -1,51 +1,51 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import '../style.css';
 
 
 function ContactPage() {
-    const [formState, setFormState] = useState({
-        name: "",
-        email: "",
-        message: ""
-    });
-    const [errorMessage, setErrorMessage] = useState("");
-    const { name, email, message } = formState;
+    // const [formState, setFormState] = useState({
+    //     name: "",
+    //     email: "",
+    //     message: ""
+    // });
+    // const [errorMessage, setErrorMessage] = useState("");
+    // const { name, email, message } = formState;
     
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        if (!errorMessage) {
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     if (!errorMessage) {
          
-            // alert("Can not be Blank")
-            console.log("submit form", formState)
-        }
-    };
+    //         // alert("Can not be Blank")
+    //         console.log("submit form", formState)
+    //     }
+    // };
 
-    const validateEmail = (email) => {
-        const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
-        return re.test(String(email).toLowerCase());
-    };
+    // const validateEmail = (email) => {
+    //     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+    //     return re.test(String(email).toLowerCase());
+    // };
 
-    const handleChange = (event) => {
-        console.log(event.target.name);
-        if (event.target.name === "email") {
-            const isValid = validateEmail(event.target.value);
-            if (!isValid) {
-                setErrorMessage("Your email is invalid")
-            } else {
-                setErrorMessage("")
-            }
-        } else {
-            if (!event.target.value.length) {
-                setErrorMessage(`${event.target.name} is required`)
-            } else {
-                setErrorMessage("")
-            }
-        }
-        if (!errorMessage) {
-            setFormState({ ...formState, [event.target.name]: event.target.value });
-            console.log("Handle Form", formState);
-        }
-    }
+    // const handleChange = (event) => {
+    //     console.log(event.target.name);
+    //     if (event.target.name === "email") {
+    //         const isValid = validateEmail(event.target.value);
+    //         if (!isValid) {
+    //             setErrorMessage("Your email is invalid")
+    //         } else {
+    //             setErrorMessage("")
+    //         }
+    //     } else {
+    //         if (!event.target.value.length) {
+    //             setErrorMessage(`${event.target.name} is required`)
+    //         } else {
+    //             setErrorMessage("")
+    //         }
+    //     }
+    //     if (!errorMessage) {
+    //         setFormState({ ...formState, [event.target.name]: event.target.value });
+    //         console.log("Handle Form", formState);
+    //     }
+    // }
     const iconsOmni = [
         {
             name: "fa-brands fa-instagram fa-bounce",
@@ -67,7 +67,7 @@ function ContactPage() {
     const iconsFatLip = [
         {
             name: "fa-brands fa-instagram fa-bounce",
-            links: "https://www.instagram.com/omnitheartist/?hl=en",
+            links: "https://www.instagram.com/fat_ass_lips/?hl=en",
             tag: "Instagram___"
         },
         {
