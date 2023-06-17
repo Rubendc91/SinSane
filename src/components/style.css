@@ -8,7 +8,7 @@
     --BaseColor: white;
     --cardTextColor: white;
     --background-color: linear-gradient(90deg, rgba(167, 2, 2, 1) 7%, rgba(0, 0, 0, 1) 49%, rgba(96, 0, 189, 1) 100%);
-    --activeTab: linear-gradient(0deg, rgba(167, 2, 2, 1) 7%, rgba(0, 0, 0, 1) 49%, rgba(96, 0, 189, 1) 100%)
+    --reverseBg: linear-gradient(270deg, rgba(167, 2, 2, 1) 7%, rgba(0, 0, 0, 1) 49%, rgba(96, 0, 189, 1) 100%)
 }
 
 .projectsBox {
@@ -56,14 +56,14 @@
     grid-gap: 1em;
     list-style-type: none;
     cursor: pointer;
-    background-color: black;
+    background: var(--reverseBg);
     font-size: large;
     font-family:Impact;
     /* margin-block-start: 0em;
     margin-block-end: 0em; */
     /* margin: 0em; */
     padding-inline-start: 0px;
-    border: .2rem inset white;
+    /* border: .2rem solid whitesmoke; */
     /* border-left: .2rem inset white;
     border-right: .2rem inset white; */
 }
@@ -136,6 +136,61 @@
 .star {
     width: 200px;
     height: 200px;
+}
+
+.contactBorder{
+    background-color: black;
+    border-radius: .5rem;
+    border: 0.5rem groove whitesmoke;
+    padding: 0.2rem;
+    margin: 4rem 0px;
+}
+
+.linkStyle{
+    background: var(--background-color);
+    border: 0.5rem ridge whitesmoke;
+    border-radius: .5rem;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* .merchBorder{
+    border-radius: .5rem;
+    border: 0.5rem groove whitesmoke;
+    padding: 0.2rem;
+    margin: 4rem 0px;
+} */
+
+.merchLinkStyle{
+    background-color: black;
+    border: 0.5rem ridge whitesmoke;
+    border-radius: .5rem;
+    color: white;
+    cursor: pointer;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+
+
+
+
+
+}
+.itemDesc{
+    text-align: right;
+}
+
+.merchImg{
+    max-width: 20vw;
+    max-height: 10vh;
+    /* justify-items: center; */
+
 }
 
 a {

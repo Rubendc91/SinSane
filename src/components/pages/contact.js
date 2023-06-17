@@ -46,6 +46,25 @@ function ContactPage() {
     //         console.log("Handle Form", formState);
     //     }
     // }
+
+    const iconsSinsane = [
+        // {
+        //     name: "fa-brands fa-instagram fa-bounce",
+        //     links: "https://www.instagram.com/fat_ass_lips/?hl=en",
+        //     tag: "Instagram___"
+        // },
+        {
+            name: "fa-brands fa-youtube fa-bounce",
+            links: "https://youtube.com/@OfficialSinSane",
+            tag: "Youtube___"
+        },
+        {
+        name: "fa-brands fa-facebook fa-bounce",
+        links: "https://facebook.com/officalSinSane/",
+        tag: "Facebook___"
+       },
+    ]
+
     const iconsOmni = [
         {
             name: "fa-brands fa-instagram fa-bounce",
@@ -82,37 +101,37 @@ function ContactPage() {
        },
     ]
 
-    const linkStyle = {
-        border:".5rem outset white",
-        textDecoraton: "none",
-        color: "white",
-        cursor: "pointer",
-        fontSize: "2rem",
-        justifyContent: "center",
-        display: "flex",
-        padding:"1rem",
-        margin: "1rem"
-    }
+
 
     return (
         <section>
             {/* <h1>Contact</h1> */}
-                <section class="contactBorder" style={{border: ".5rem inset white", padding: ".2rem", margin: "4rem 0"}}>
+            <section class="contactBorder" >
+                <h1>Sinsane</h1>
+
+                <a href= "SinSanebooking@gmail.com?subject=Important!!!!!!&body=When and where?" className="linkStyle">Email____<i class="fa-solid fa-paper-plane fa-bounce" ></i></a> 
+                {iconsSinsane.map(icon => {
+                    return <a href={icon.links} key={icon.name} target="_blank" rel="noopener noreferrer" className="linkStyle">{icon.tag}<i className={icon.name}></i></a>
+                })}
+
+                </section>
+                
+                <section class="contactBorder" >
                     <h1>Omni</h1>
                 {iconsOmni.map(icon => {
-                    return <a href={icon.links} key={icon.name} target="_blank" rel="noopener noreferrer" style={linkStyle}>{icon.tag}<i className={icon.name}></i></a>
+                    return <a href={icon.links} key={icon.name} target="_blank" rel="noopener noreferrer" className="linkStyle">{icon.tag}<i className={icon.name}></i></a>
                 })}
-                            <a href= "mailto:omniofthearts.com?subject=Important!!!!!!&body=What would you like to say?" style={linkStyle}>Email____<i class="fa-solid fa-paper-plane fa-bounce" ></i></a> 
+                            <a href= "mailto:omniofthearts.com?subject=Important!!!!!!&body=What would you like to say?" className="linkStyle">Email____<i class="fa-solid fa-paper-plane fa-bounce" ></i></a> 
 
                 </section>
 
-                <section class="contactBorder" style={{border: ".5rem inset white", padding: ".2rem", margin: "4rem 0"}}>
+                <section class="contactBorder" >
                 <h1>Fat Lip</h1>
 
                 {iconsFatLip.map(icon => {
-                    return <a href={icon.links} key={icon.name} target="_blank" rel="noopener noreferrer" style={linkStyle}>{icon.tag}<i className={icon.name}></i></a>
+                    return <a href={icon.links} key={icon.name} target="_blank" rel="noopener noreferrer" className="linkStyle">{icon.tag}<i className={icon.name}></i></a>
                 })}
-                            <a href= "legallysmith@gmail.com?subject=Important!!!!!!&body=What would you like to say?" style={linkStyle}>Email____<i class="fa-solid fa-paper-plane fa-bounce" ></i></a> 
+                            <a href= "legallysmith@gmail.com?subject=Important!!!!!!&body=What would you like to say?" className="linkStyle">Email____<i class="fa-solid fa-paper-plane fa-bounce" ></i></a> 
 
                 </section>
 

@@ -24,7 +24,7 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState(pages[0])
   return (
-    <div>
+    <section>
       <Header>
         <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
       </Header>
@@ -33,7 +33,7 @@ function App() {
         <Page currentPage={currentPage}></Page>
       </main>
       <Footer />
-    </div>
+    </section>
   );
 }
 export default App;

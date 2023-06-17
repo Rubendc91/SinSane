@@ -2,6 +2,8 @@ import React from 'react';
 import Placeholder from '../../components/img/Placeholder.png';
 // import Placeholder from '../../components/img/Placeholder.png';
 
+// TODO: add in array and map for creating events 
+
 function infoPage() {
 
     const DescriptionStyle = {
