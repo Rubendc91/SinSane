@@ -14,6 +14,7 @@ function Header(props) {
             {props.children}
 
             <img className="Header-Img" src={Banner} alt="sinsane" />
+            <h1 >_</h1>
         </header>);
 }
 export default Header;
