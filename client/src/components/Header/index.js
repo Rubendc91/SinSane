@@ -1,5 +1,7 @@
 import React from 'react';
 import Banner from '../img/Banner.png';
+// import Login from "../pages/Login"
+
 
 
 
@@ -14,7 +16,6 @@ function Header(props) {
             {props.children}
 
             <img className="Header-Img" src={Banner} alt="sinsane" />
-            <h1 >_</h1>
         </header>);
 }
 export default Header;

@@ -23,12 +23,19 @@ function App() {
     {
       name: "Info"
     },
+    // {
+    //   name: "Login"
+    // },
   ])
 
+  
   const client = new ApolloClient({
     uri: "/graphql",
     cache: new InMemoryCache(),
   });
+  // changeState = () => {
+  //   currentPage.name =  "Login";
+  // };
 
   const [currentPage, setCurrentPage] = useState(pages[0])
   return (
@@ -37,7 +44,8 @@ function App() {
       <Header>
         <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
       </Header>
-      <Route exact path="/login" element={<Login />} />
+        {/* <button onclick={changeState()}>_</button> */}
+      {/* <Route exact path="/login" element={<Login />} /> */}
           {/* </Route> */}
 
       <main>

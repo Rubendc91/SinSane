@@ -4,6 +4,7 @@ import Merch from "../pages/Merch";
 import Contact from "../pages/contact";
 import Info from "../pages/info";
 import PageContent from '../PageContent';
+import Login from '../pages/Login';
 
 
 function Page({ currentPage }) {
@@ -16,6 +17,8 @@ function Page({ currentPage }) {
             return <Contact />
         } else if (currentPage.name === "Info") {
             return <Info />
+        } else if (currentPage.name === "Login") {
+            return <Login />
         } else {
             return <About />
         }
