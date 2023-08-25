@@ -1,5 +1,6 @@
-import React from 'react';
 import Banner from '../img/Banner.png';
+import '../style.css';
+import React from 'react';
 // import Login from "../pages/Login"
 
 
@@ -7,9 +8,11 @@ import Banner from '../img/Banner.png';
 
 
 
-import '../style.css';
+
+
 
 function Header(props) {
+
     return (
         <header className="header-container">
             <h1>Sinsane</h1>
